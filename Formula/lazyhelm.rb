@@ -5,21 +5,21 @@
 class Lazyhelm < Formula
   desc "A terminal UI for browsing and managing Helm charts"
   homepage "https://github.com/alessandropitocchi/lazyhelm"
-  version "0.2.1"
+  version "0.2.2"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/alessandropitocchi/lazyhelm/releases/download/v0.2.1/lazyhelm_Darwin_x86_64.tar.gz"
-      sha256 "24c18f2378c45c97d2a0877d45ddbd20376c47b9511d3646f9e52561e7a3aeaa"
+      url "https://github.com/alessandropitocchi/lazyhelm/releases/download/v0.2.2/lazyhelm_Darwin_x86_64.tar.gz"
+      sha256 "ee790c06336e5ed0db5d3d1cfcf7b1970aef743327fa9922d092dea022ee394f"
 
       def install
         bin.install "lazyhelm"
       end
     end
     on_arm do
-      url "https://github.com/alessandropitocchi/lazyhelm/releases/download/v0.2.1/lazyhelm_Darwin_arm64.tar.gz"
-      sha256 "184c3c45fbf91ceb4bd11b6ae4297429eb69dae4055c7b07f56ae076a3c63f39"
+      url "https://github.com/alessandropitocchi/lazyhelm/releases/download/v0.2.2/lazyhelm_Darwin_arm64.tar.gz"
+      sha256 "7bd5a852afe596325b764b8e7c59dcf5d3c4b178a1ca9ff786a3b0e6d892b0e3"
 
       def install
         bin.install "lazyhelm"
@@ -30,8 +30,8 @@ class Lazyhelm < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/alessandropitocchi/lazyhelm/releases/download/v0.2.1/lazyhelm_Linux_x86_64.tar.gz"
-        sha256 "ffbcfe6c8b3e8dfe7fbe5ac88d8d6243aebc18952b27d0617852d097be809e91"
+        url "https://github.com/alessandropitocchi/lazyhelm/releases/download/v0.2.2/lazyhelm_Linux_x86_64.tar.gz"
+        sha256 "7e87de699fac3580495e268e7443932a8e6316965d24b28185cb6db8d184977a"
 
         def install
           bin.install "lazyhelm"
@@ -40,8 +40,8 @@ class Lazyhelm < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/alessandropitocchi/lazyhelm/releases/download/v0.2.1/lazyhelm_Linux_arm64.tar.gz"
-        sha256 "12367061a2dccb3b80938df6ad34b14ba847948df346620c7f1798d04e7ee84d"
+        url "https://github.com/alessandropitocchi/lazyhelm/releases/download/v0.2.2/lazyhelm_Linux_arm64.tar.gz"
+        sha256 "6c3300a833d58123e31bc45ad98542f86ed6c9ef34ade6ec2c85568e5817d842"
 
         def install
           bin.install "lazyhelm"
